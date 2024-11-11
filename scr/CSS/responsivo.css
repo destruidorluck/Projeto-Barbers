@@ -1,0 +1,149 @@
+/* Responsividade para a Galeria */
+@media (max-width: 768px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsividade para a tabela de Feedback */
+@media (max-width: 768px) {
+    .op {
+        width: 100%;
+    }
+
+    .fed1,
+    .fed2 td {
+        padding: 10px;
+    }
+
+    .fed2 img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Responsividade para a Caixa de Texto na página "Sobre Nós" */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.8em;
+    }
+
+    .caixa-externa {
+        width: 90%;
+    }
+
+    .caixa-interna {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+}
+
+/* Responsividade Adicional para Outros Elementos */
+
+/* Ajuste do menu de navegação em telas menores */
+@media (max-width: 1024px) {
+    .nav {
+        height: auto; /* Permite que a altura da navegação se ajuste em telas menores */
+        display: flex; /* Garante o layout flexível */
+        flex-direction: column; /* Organiza os itens de navegação na vertical */
+        justify-content: center; /* Centraliza os itens verticalmente */
+        align-items: center; /* Alinha os itens horizontalmente */
+        text-align: center; /* Alinha o texto dos links ao centro */
+    }
+
+    ul.nav {
+        display: flex; /* Usa flexbox para o contêiner da lista */
+        flex-direction: column; /* Alinha os itens da lista na vertical */
+        width: 100%; /* Garante que o `ul` ocupe toda a largura disponível */
+        padding: 0; /* Remove a margem/padding padrão */
+        list-style-type: none; /* Remove os marcadores padrão da lista */
+    }
+
+    li.list {
+        margin: 10px 0; /* Espaçamento entre os itens da lista */
+        width: 100%; /* Garante que os itens da lista ocupem toda a largura */
+        text-align: center; /* Centraliza o texto dentro dos itens */
+    }
+
+    li.list a {
+        display: block; /* Faz com que o link ocupe toda a largura do `li` */
+        padding: 15px 20px; /* Ajuste de padding */
+        font-size: 20px;
+        text-align: center; /* Centraliza o texto dentro do link */
+    }
+}
+
+/* Ajuste da logo em telas menores */
+@media (max-width: 768px) {
+    .logo img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* Responsividade para a seção de contato */
+@media (max-width: 768px) {
+    .contact-section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+    }
+
+    .contact-item span {
+        font-size: 16px;
+    }
+}
+
+/* Responsividade para a seção de feedback */
+@media (max-width: 768px) {
+    .fedback {
+        font-size: 1.8em;
+    }
+
+    .fed3 td {
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    .fed3:last-child {
+        margin-bottom: 30px;
+    }
+}
+
+/* Ajustes adicionais para dispositivos muito pequenos */
+@media (max-width: 480px) {
+    li.list a {
+        font-size: 18px; /* Ajuste de tamanho da fonte */
+        padding: 10px 15px; /* Ajuste do padding */
+    }
+
+    .fedback {
+        font-size: 1.5em;
+    }
+
+    .galeria h2 {
+        font-size: 36px;
+    }
+
+    .contact-section h2 {
+        font-size: 20px;
+    }
+
+    #tabela-container table {
+        font-size: 16px;
+    }
+
+    #calendar-table {
+        font-size: 16px;
+    }
+}
